@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Cherish Your Journey</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.css">
+        <style>
+            /* Remove the navbar's default margin-bottom and rounded borders */ 
+            .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            }
+            
+            /* Add a gray background color and some padding to the footer */
+            footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a style="color:white" class="navbar-brand" href="#">Hotels & Resorts </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a style="color:white; font-size:20px;" href="#">Flights </a></li>
+                        <li><a style="color:white; font-size:20px;" href="#">Train & Rail Info</a></li>
+                        <li><a style="color:white; font-size:20px;" href="#">Trip Ideas</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <div id="mySidebar" class="sidebar">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="#">Home</a>
+                            <a href="#">My Trips</a>
+                            <a href="#">Wallet</a>
+                            <a href="#">Login</a>
+                            <a href="#">Sign-up</a>
+                        </div>
+                        <div id="main">
+                            <button class="openbtn" onclick="openNav()">Menu</button>  
+                        </div>
+                        <script>
+                        function openNav() {
+                            document.getElementById("mySidebar").style.width = "250px";
+                            document.getElementById("main").style.marginLeft = "250px";
+                        }  
+                        function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft= "0";
+                        }
+                        </script>   
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Background image -->
+        <div class="p-5 text-center bg-image" style="background-image: url('travel.gif'); background-repeat:no-repeat;  background-size: cover; background-position: center; height: 400px;">
+          <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                <h1 class="mb-3" style="color:white;">Cherish Your Journey</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Background image -->
+
+        <div class="container-fluid" style="background-color:lightblue;">
+            <h2 style="color:black; font-weight:bold;" >offers</h2>
+            <div class="jumbotron">
+                <div class="container-fluid col-sm-4" style="background-color:mistyrose; border:1px solid black;">container1</div>
+                <div class="container-fluid col-sm-4" style="background-color:burlywood;border:1px solid black;">container2</div>
+                <div class="container-fluid col-sm-4" style="background-color:darkkhaki; border:1px solid black;">container3</div>
+            </div> 
+
+            <div>
+              <h2 style="color:black; font-weight:bold;">Image Gallery</h2>
+            </div>
+
+            <div class="jumbotron">
+              <!-- Container for the image gallery -->
+              <div class="container">
+
+                  <!-- Full-width images with number text -->
+                  <div class="container">
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 6</div>
+                      <img src="img1.png" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 6</div>
+                      <img src="img2.png" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 6</div>
+                      <img src="img3.png" style="width:100%">
+                    </div>
+                      
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 6</div>
+                      <img src="img4.png" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 6</div>
+                      <img src="img5.png" style="width:100%">
+                    </div>
+                      
+                    <div class="mySlides">
+                      <div class="numbertext">6 / 6</div>
+                      <img src="img6.png" style="width:100%">
+                    </div>
+                      
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  
+                    <div class="row">
+                      <div class="column">
+                        <img class="demo cursor" src="img1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="img5.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                      </div>    
+                      <div class="column">
+                        <img class="demo cursor" src="img6.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <script>
+                  var slideIndex = 1;
+                  showSlides(slideIndex);
+                  
+                  function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                  
+                  function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                  }
+                  
+                  function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                  }
+                  </script>
+              </div> 
+            </div>
+          </div>
+    </body>
+</html>
